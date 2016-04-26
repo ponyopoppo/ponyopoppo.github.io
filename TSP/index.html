@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>TSP Ranking</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flat-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/flat-ui.min.js"></script>
+    <script type="text/javascript" src="js/sigma.min.js"></script>
+    <script type="text/javascript" src="js/sigma.parsers.json.min.js"></script>    
+  </head>
+  <body>
+    <!-- begin navigation bar -->
+    <nav class="navbar navbar-inverse" role="navigation" style="border-radius:0px;">
+      <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu-1">
+	    <span class="sr-only">Toggle navigation</span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>	  	
+	  <a class="navbar-brand" href="index.html">TSP Ranking</a>
+	</div>
+	<div class="collapse navbar-collapse" id="nav-menu-1">
+	  <ul class="nav navbar-nav">
+	    <li class="active"><a href="index.html">トップページ</a></li>
+	    <li><a href="problem.html">問題</a></li>	   
+	    <li><a href="submit.html">提出</a></li>
+	    <li><a href="ranking.html">順位表</a></li>	    
+	  </ul>
+	  <ul class="nav navbar-nav navbar-right">
+	    <li class="nvb-mypage"><a href="mypage.html">マイページ</a></li>	   
+	    <li class="nvb-login"><a href="login.html">ログイン</a></li>
+	  </ul>
+	</div>	
+      </div>
+    </nav>
+    <!-- end navigation bar -->
+    
+    <div class="main">
+      <h3 style="color: #ECF0F1;">大課題（情報実験第一）</h3>
+      <div class="rounded">
+	<h4>問題</h4>
+	<p>巡回セールスマン問題（じゅんかいセールスマンもんだい、英: traveling salesman problem、TSP）は、都市の集合と各2都市間の移動コスト（たとえば距離）が与えられたとき、全ての都市をちょうど一度ずつ巡り出発地に戻る巡回路の総移動コストが最小のものを求める（セールスマンが所定の複数の都市を1回だけ巡回する場合の最短経路を求める）組合せ最適化問題である。</p>
+      </div>
+      <div class="rounded">
+	<h4>入力</h4>	
+	<p>1行目に正の整数n(&lt;30,000)が与えられる。更に、i(0&lt;i&lt;n)行目には頂点番号(i-1)の頂点の座標であるx_(i-1), y_(i-1)がスペース区切りで与えられる。</p>
+      </div>
+      <div class="rounded">
+	<h4>出力</h4>
+	<p>全ての頂点をちょうど一度ずつ巡り、出発地に戻る総移動コストがなるべく小さくなるような頂点の訪問順を求め、スペース区切りで頂点番号を1行に出力せよ。ただし、始点/終点となる頂点は、最後にもう一度出力してはならない。また、2行目以降の出力は無視するので好きなようにコメントを書いても良い。</p>
+      </div>
+      <div class="rounded">
+	<h4>サンプル</h4>
+	<p>入力：</p>	
+	<pre><code>3
+0 0
+1 0
+0 1</code></pre>
+	<p>出力：</p>
+	<pre><code>0 2 1
+2行目以降は何を書いても良い</code></pre>	    
+      </div>
+      <div class="rounded">
+	<h4>採点基準</h4>
+	<p>このサイトでのスコアは、成績評価に含まれないので注意すること。</p>
+      </div>
+    </div>
+    <footer style="margin-top: 20px;">
+    </footer>    
+  </body>
+</html>

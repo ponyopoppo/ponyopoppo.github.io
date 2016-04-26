@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>TSP Ranking</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flat-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/flat-ui.min.js"></script>
+    <script type="text/javascript" src="js/sigma.min.js"></script>
+    <script type="text/javascript" src="js/sigma.parsers.json.min.js"></script>    
+  </head>
+  <body>
+    <!-- begin navigation bar -->
+    <nav class="navbar navbar-inverse" role="navigation" style="border-radius:0px;">
+      <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu-1">
+	    <span class="sr-only">Toggle navigation</span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>	  	
+	  <a class="navbar-brand" href="index.html">TSP Ranking</a>
+	</div>
+	<div class="collapse navbar-collapse" id="nav-menu-1">
+	  <ul class="nav navbar-nav">
+	    <li><a href="index.html">トップページ</a></li>
+	    <li><a href="problem.html">問題</a></li>	   
+	    <li><a href="submit.html">提出</a></li>
+	    <li class="active"><a href="ranking.html">順位表</a></li>	    
+	  </ul>
+	  <ul class="nav navbar-nav navbar-right">
+	    <li class="nvb-mypage"><a href="mypage.html">マイページ</a></li>	   
+	    <li class="nvb-login"><a href="login.html">ログイン</a></li>	    
+	  </ul>
+	</div>	
+      </div>
+    </nav>
+    <!-- end navigation bar -->
+    
+    <div class="main">
+      <div class="rounded">
+	<h4>ランキング</h4>
+	<table class="table table-striped">
+	  <thread>
+	    <tr>
+	      <th>#</th>
+	      <th>名前</th>
+	      <th>スコア</th>
+	    </tr>
+	  </thread>
+	  <tbody id="ranking_list">
+	  </tbody>	    
+	</table>
+      </div>      
+    </div>
+    <footer style="margin-top: 20px;">
+    </footer>
+    <script type="text/javascript" src="js/ranking.js"></script>
+  </body>
+</html>
